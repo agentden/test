@@ -14,6 +14,8 @@ if ($_SESSION['pass'] === hash('ripemd160', '123')) {
 	echo 'WTF';
 }
 
+session_destroy();
+
 
 
 ?>

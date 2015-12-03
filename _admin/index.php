@@ -1,6 +1,9 @@
 <?php
-	error_reporting(-1);
-	header('Content-Type: text/html; charset= utf-8');
+error_reporting(-1);
+header('Content-Type: text/html; charset= utf-8');
+
+session_start();
+
 ?>
 
 <!DOCTYPE html>

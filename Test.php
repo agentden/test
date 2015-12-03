@@ -7,11 +7,14 @@ session_start();
 print_r ($_SESSION);
 
 echo '<br>';
-
-if (isset($_POST) && !empty($_POST)) {
+echo $_POST['password'].'<br>';
+if (isset($_POST) && !empty($_POST['login']) && !empty($_POST['password'])) {
 	$login = $_POST['login'];
-	$pass = hash('ripemd160', $_POST['password']);
+	$pass = hash('sha512', $_POST['password']);
+} else {
+	die ('Вы не заполнили необходимые поля <a href="index.php">Вернуться на главную</a>');
 }
+
 
 echo $login;
 echo '<br>'.$pass.'<br>';
