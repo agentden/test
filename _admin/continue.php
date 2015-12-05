@@ -9,7 +9,7 @@ print_r ($_SESSION);
 echo '<br>';
 
 if ($_SESSION['pass'] === hash('sha512', '123')) {
-	echo "Ohuitelno";
+	echo "good";
 } else {
 	echo 'WTF';
 }
