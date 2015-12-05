@@ -18,7 +18,7 @@ session_start();
 	<section>
 	<H1>Вход в систему</H1>
 	<p><b>Для доступа к панели управления сайтом, введите:</b></p>
-		<form action="test.php" method="post">
+		<form action="../_admin/test.php" method="post">
 			<table>				
 				<tr>
 					<label>	
@@ -38,7 +38,7 @@ session_start();
 			</table>
 		</form>
 		<hr>
-		<p>CMS &copy; Liberty</p>
+		<p>CMS &copy; Liberty </p>
 	</section>
 		<footer>			
 		</footer>
